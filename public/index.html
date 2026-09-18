@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <title>Quota - local overview</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">q.</span><span>quota-axi <span class="muted">/ web</span></span></div>
+      <span class="local-badge">● Local only</span>
+    </header>
+    <section class="heading" aria-labelledby="title">
+      <div><p class="eyebrow">YOUR CAPACITY, AT A GLANCE</p><h1 id="title">Quota overview</h1><p class="intro">A quiet place to check your AI allowances.</p></div>
+      <button id="refresh" type="button">Refresh now <span aria-hidden="true">↻</span></button>
+    </section>
+    <div class="toolbar"><p id="updated">No report yet</p><p id="schedule">Provider refresh every 5 minutes</p></div>
+    <p id="notice" role="status" aria-live="polite">Reading local quota report…</p>
+    <section id="providers" class="grid" aria-label="Provider quotas" aria-busy="true"></section>
+    <noscript><p class="notice">JavaScript is required to read the local quota endpoint.</p></noscript>
+    <footer><p>Local CLI → local browser. No hosted quota data.</p><p>Reported windows, not estimates. Credentials stay with quota-axi.</p></footer>
+  </main>
+</body>
+</html>

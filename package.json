@@ -1,0 +1,22 @@
+{
+  "name": "quota-axi-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local-only browser viewer for quota-axi",
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "lint": "eslint .",
+    "test": "node --test test/*.test.js",
+    "test:demo": "node test/demo.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.10.0",
+    "globals": "^17.12.0",
+    "jsdom": "^29.1.1"
+  }
+}
